@@ -1,0 +1,216 @@
+==============================================================================================
+LIGAND DESIGN PLAN
+Structure-guided design of selective ligands using differential pocket mapping
+==============================================================================================
+Structures used : 3K60 (ADP-bound, non-human protein), 3T0H (human, apo), 5CF0 (human, bound to FJS)
+Analysis files  : pocket_report.txt, human_report.txt, threeway_report.txt (+ CSV tables)
+Target protein  : ______________________   Off-target protein : ______________________
+(Fill in. Section 6 gives one design route for each direction; keep the one that applies, or both.)
+
+
+----------------------------------------------------------------------------------------------
+1. AIM
+----------------------------------------------------------------------------------------------
+To design small-molecule ligands that bind the target pocket with high potency and discriminate
+against the off-target pocket, by exploiting the few residue differences between the two
+proteins while relying on the many conserved residues for affinity.
+
+
+----------------------------------------------------------------------------------------------
+2. BASIS OF THE PLAN: WHAT THE STRUCTURAL COMPARISON SHOWS
+----------------------------------------------------------------------------------------------
+I superimposed the structures (CE alignment, 200 residues; RMSD 1.77 A for 3K60 vs 3T0H and
+1.09 A for 5CF0 vs 3T0H) and defined each pocket as all residues with an atom within 5.0 A of
+the bound ligand (ADP in 3K60, FJS in 5CF0). Residues were matched position by position in 3D.
+
+Findings that drive the design:
+  a) The pocket is highly conserved. In 3T0H vs 3K60, 24 of 28 matched positions are identical.
+     3T0H and 5CF0 are the same human protein (27 of 27 identical). Affinity can therefore come
+     from the shared residues, and selectivity must come from a small number of positions.
+  b) Rigid conserved anchor residues (human numbering), which stay put in all structures:
+     Asn51, Asp54, Ala55, Asp93, Ile96, Gly97, Met98, Phe138, Tyr139, Trp162, Thr184
+     (supported by Leu48, Asp102, Leu103, Gly137). Lys58 is conserved but its side chain moves
+     3.1 A between human structures, so it is treated as a flexible anchor.
+  c) Four differing positions are rigid and within reach of a ligand (selectivity handles):
+
+     Handle              Difference (human -> 3K60)       Dist. to FJS   Reach     Priority
+     Ser52  -> Ala38     loses OH, same size              3.9 A          contact   High
+     Val186 -> Ile173    +1 methyl in 3K60 (+27 A^3)      3.4 A          contact   High
+     Thr152 -> Ser138    -1 methyl in 3K60 (-27 A^3)      5.1 A          edge      Medium-high
+     His154 -> Asn140    loses ring in 3K60 (-39 A^3)     5.9 A          edge      Medium
+
+     Lys112 -> Arg98 is also different but 9.9 A from FJS, so it is not used in round 1.
+  d) Two regions move: loop 106-111 (CA-CA shifts of 3 to 9 A, mobile even within the human
+     protein) and region 132-136 (positioned differently in 3K60 after register correction).
+     These are not used as rigid anchors. They are handled separately (Section 5, Step 6).
+
+
+----------------------------------------------------------------------------------------------
+3. DESIGN CONCEPT
+----------------------------------------------------------------------------------------------
+Each ligand is built from three parts:
+
+      [ ANCHOR ]  --  [ LINKER / GROWTH VECTOR ]  --  [ SELECTIVITY HANDLE ]
+
+  ANCHOR   A core that binds the rigid, conserved residues in 2b. It gives potency on both
+           proteins and must adopt the same pose in both.
+  LINKER   Holds the handle group at the right place and angle. Rigid where possible, to limit
+           the entropy lost on binding.
+  HANDLE   A small substituent designed against ONE differing residue from 2c. It is built to
+           fit the target and to either clash with, or fail to interact with, the residue in
+           the off-target.
+
+Selectivity mechanisms, in order of preference:
+  1. Steric clash with a rigid off-target residue (most reliable; a rigid side chain cannot move
+     away). Used at Val186/Ile173, Thr152/Ser138 and His154/Asn140.
+  2. Loss of a specific interaction in the off-target (hydrogen bond to Ser52 OH, which Ala38
+     cannot provide).
+  3. Conformational selectivity (stabilising a loop state that exists in only one protein).
+  4. Combination of 2 or more handles, because their effects add in free energy and multiply
+     in affinity. About 1.4 kcal/mol is a 10-fold change, so two handles worth 1 to 2 kcal/mol
+     each could give around 100-fold.
+
+The ligand is not required to touch every pocket corner. Potency needs a few strong, rigid
+contacts (Asp93 hydrogen bond, Gly97/Met98 backbone, packing against Phe138/Trp162/Ile96).
+Extra contacts add size but not selectivity.
+
+
+----------------------------------------------------------------------------------------------
+4. STARTING POINT
+----------------------------------------------------------------------------------------------
+FJS (5CF0) already binds the human pocket, and its contact residues and distances are known.
+Round 1 grows from FJS toward the handles:
+    toward Val186 and Ser52 : short vectors (3.4 to 3.9 A), contact-level substitution
+    toward Thr152 and His154: edge growth (5.1 to 5.9 A), needs a 1 to 2 A linker
+For ligands favouring the non-human protein, the ADP footprint in 3K60 (and any known fragment
+for that protein) is used as the starting point with the same handle logic in reverse.
+
+
+----------------------------------------------------------------------------------------------
+5. METHOD, STEP BY STEP
+----------------------------------------------------------------------------------------------
+Step 1  Structural comparison (completed)
+        Output: anchors, handles, reach and rigidity (Section 2).
+
+Step 2  Cavity-volume analysis
+        Compute the cavity of each superimposed pocket (POVME, fpocket, CASTp or a grid in
+        PyMOL/Python). Take:
+          intersection volume    = space present in both pockets -> the anchor must fit here
+          target-only volume     = space present only in the target -> the handle must fill it
+          off-target-only volume = space present only in the off-target -> never design into it
+        Criterion: proceed with a handle only if a target-only volume of about 20 A^3 or more
+        lies next to a reachable growth vector.
+
+Step 3  Design enumeration
+        At each growth vector from the anchor/FJS, enumerate small substituents chosen by the
+        handle type:
+          steric handles      : methyl, ethyl, cyclopropyl, halogen, small branched groups
+                                (sized to overlap the off-target residue by roughly 0.5 to 1.0 A)
+          polar handle (Ser52): hydrogen-bond donors/acceptors (OH, NH2, amide, small heterocycle)
+          hydrophobic handle  : methyl, CF3, halogen facing Ala38
+          His154 handle       : groups able to hydrogen bond or pi stack with His (human),
+                                or bulk toward the Asn140 site (non-human protein)
+        Clash handles are placed against rigid residues only. Mobile residues can move away.
+
+Step 4  Docking to an ensemble
+        Dock every candidate into 5CF0, 3T0H and 3K60 plus MD snapshots of each, not one frame.
+        Criteria: same anchor pose in both proteins, and a clear score or pose advantage in the
+        target across most of the ensemble.
+
+Step 5  Water check
+        Examine ordered waters near Ser52/Ala38 and Thr152/Ser138 in all structures and assess
+        them with a water analysis tool (GIST, WaterMap or 3D-RISM). Hydrogen-bond handles are
+        kept only if the water network does not cancel the gain.
+
+Step 6  Conformational selectivity
+        Run MD on the apo and bound human protein and on 3K60. Cluster the conformations of
+        loop 106-111 and region 132-136, identify states unique to each protein, and test
+        whether any candidate stabilises the target-specific state.
+
+Step 7  Molecular dynamics of the complexes
+        100 ns or longer, three replicas per ligand-protein complex.
+        Criterion: the handle contact (or the clash in the off-target) persists, and the off-
+        target does not escape the clash by rearranging its loop.
+
+Step 8  Free energy calculations
+        Relative FEP between matched pairs (for example the Ser/Thr and Val/Ile positions) to
+        quantify the handle effect.
+        Criterion: predicted selectivity of at least 1.5 kcal/mol (about 10-fold) to proceed.
+
+Step 9  Synthesis and testing
+        Synthesise the top candidates and measure binding or inhibition against BOTH proteins.
+        Selectivity ratio = affinity (off-target) / affinity (target).
+        Goal: 30-fold or better, with nanomolar potency.
+
+
+----------------------------------------------------------------------------------------------
+6. DESIGN ROUTES
+----------------------------------------------------------------------------------------------
+ROUTE H : ligands selective for the HUMAN protein (off-target = 3K60)
+  Anchor  : rigid core on Asp93, Gly97, Met98, Phe138, Tyr139, Thr184, Trp162
+  Handle 1: hydrogen-bond group to the Ser52 OH (Ala38 in 3K60 cannot respond)
+  Handle 2: small group beside Val186 that clashes with the extra methyl of Ile173
+  Optional: group engaging His154 (the residue is Asn140 in 3K60)
+
+ROUTE P : ligands selective for the NON-HUMAN protein (off-target = human)
+  Anchor  : same core
+  Handle 1: group growing into the room next to Ser138 (clashes with the Thr152 methyl in human)
+  Handle 2: bulk toward the Asn140 site (clashes with the His154 ring in human)
+  Avoid   : growth toward Ile173, where 3K60 is more crowded
+
+Each route will use the matched-pair control below.
+
+
+----------------------------------------------------------------------------------------------
+7. CONTROLS AND VALIDATION
+----------------------------------------------------------------------------------------------
+  - Matched-pair control: for every handle ligand, a second ligand without the handle but with
+    the same anchor and linker. If the handle is responsible for selectivity, the control loses
+    it. This separates a handle effect from a general scaffold effect.
+  - Anchor-only reference: the anchor alone should bind both proteins similarly, showing the
+    potency is conserved and the handle supplies the difference.
+  - Reverse-direction test: a handle designed for one protein should disfavour the other. The
+    two routes in Section 6 cross-check each other.
+  - Additional off-targets (paralogues or other family members) will be added to the pocket
+    comparison before synthesis, so a handle that beats 3K60 does not lose selectivity against
+    another protein.
+
+
+----------------------------------------------------------------------------------------------
+8. EXPECTED OUTPUTS
+----------------------------------------------------------------------------------------------
+  - A ranked list of handles with distance, rigidity, and chemistry rules (Section 2c, 3).
+  - Cavity-volume maps: intersection, target-only and off-target-only regions.
+  - A set of designed ligands for Route H and/or Route P, each with docking, MD and FEP data.
+  - Matched-pair controls for every handle.
+  - Measured affinity and selectivity ratios for the synthesised compounds.
+
+
+----------------------------------------------------------------------------------------------
+9. LIMITATIONS AND HOW I WILL ADDRESS THEM
+----------------------------------------------------------------------------------------------
+  - Crystal structures are single snapshots, and 3T0H is apo.
+      -> Use 5CF0 (bound) as the main human reference and MD ensembles for flexibility.
+  - Only residues within 5 A of the ligand were compared; second-shell residues and loop
+    dynamics are not captured.
+      -> MD (Steps 6 and 7) tests whether the handle effect holds in a moving pocket.
+  - The distances to handles come from FJS and ADP. New ligands will sit slightly differently.
+      -> Re-measure distances on every docked pose.
+  - Docking scores cannot resolve about 1 kcal/mol differences.
+      -> FEP (Step 8) and experiment (Step 9) make the decision.
+  - Ligands for an ATP/ADP site compete with cellular nucleotide.
+      -> High potency is required, not selectivity alone.
+  - Protonation or tautomer state of His154 can change the His/Asn handle.
+      -> Test both states in docking and MD.
+
+
+----------------------------------------------------------------------------------------------
+APPENDIX: POSITION CLASSIFICATION (human numbering, from threeway_report.txt)
+----------------------------------------------------------------------------------------------
+CONSERVED (anchors) : Glu47 Leu48 Asn51 Asp54 Ala55 Lys58 Asp93 Gly95 Ile96 Gly97 Met98 Asp102
+                      Leu103 Leu107 Gly137 Phe138 Tyr139 Val150 Trp162 Thr184
+HANDLE, different   : Ser52 -> Ala38 ; His154 -> Asn140
+HANDLE, similar     : Thr152 -> Ser138 ; Val186 -> Ile173 ; Lys112 -> Arg98 (far, later round)
+MOBILE / SHIFTED    : Asn106 Gly108 Thr109 Ile110 Ala111 (loop 106-111)
+                      Gly132 Phe134 Gly135 Val136 (region 132-136)
+==============================================================================================
