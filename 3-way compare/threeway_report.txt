@@ -1,0 +1,163 @@
+CE alignment 3K60 -> 3T0H : RMSD 1.77 A over 200 residues
+CE alignment 5CF0 -> 3T0H : RMSD 1.09 A over 200 residues
+Register override applied: 3T0H 132-138 paired with 3K60 118-124 (offset 14)
+
+Pocket = residues with ANY atom within 5.0 A of FJS (in 5CF0) or ADP (in 3K60); all structures superimposed on 3T0H.
+Positions = union of all four pocket lists, keyed by 3T0H number. Change is read HUMAN -> 3K60.
+
+==================================================================================================================================
+TABLE 1. POCKET RESIDUES
+==================================================================================================================================
+5CF0 (FJS)             (21): LEU48 ASN51 SER52 ASP54 ALA55 LYS58 ASP93 ILE96 GLY97 MET98 ASP102 LEU103 LEU107 ILE110 GLY135 PHE138 TYR139 VAL150 TRP162 THR184 VAL186
+3T0H (FJS footprint)   (25): LEU48 ASN51 SER52 ASP54 ALA55 LYS58 ASP93 GLY95 ILE96 GLY97 MET98 LEU103 ASN106 LEU107 GLY108 THR109 GLY135 PHE138 TYR139 VAL150 THR152 HIS154 TRP162 THR184 VAL186
+3T0H (ADP footprint)   (28): LEU48 ASN51 SER52 ASP54 ALA55 LYS58 ASP93 GLY95 ILE96 GLY97 MET98 ASP102 ASN106 LEU107 GLY108 THR109 ILE110 ALA111 GLY132 PHE134 GLY135 VAL136 GLY137 PHE138 TYR139 THR152 THR184 VAL186
+3K60 (ADP)             (22): GLU33 LEU34 ASN37 ALA38 ASP40 ALA41 LYS44 ASP79 GLY81 ILE82 GLY83 MET84 ASP88 ASN92 LEU93 ARG98 VAL122 GLY123 PHE124 TYR125 THR171 ILE173
+
+==================================================================================================================================
+TABLE 2. SAME POSITION IN 3D: 3T0H / 5CF0 / 3K60
+==================================================================================================================================
+Pos  3T0H     5CF0     3K60     In pocket of                           T-H sc  T-K CA  T-K sc  H-K CA  3K60 loop looks like
+P1   GLU47    GLU47    GLU33    ADP:3K60                               0.22    0.04    0.56    0.16    equal
+P2   LEU48    LEU48    LEU34    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.06    0.17    0.27    0.28    equal
+P3   ASN51    ASN51    ASN37    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.35    0.41    0.37    0.53    equal
+P4   SER52    SER52    ALA38    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.27    0.45    0.84    0.61    equal
+P5   ASP54    ASP54    ASP40    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.43    0.53    0.63    0.68    equal
+P6   ALA55    ALA55    ALA41    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.46    0.38    0.33    0.52    equal
+P7   LYS58    LYS58    LYS44    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    3.13    0.70    0.65    0.53    equal
+P8   ASP93    ASP93    ASP79    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.23    0.42    0.45    0.28    equal
+P9   GLY95    GLY95    GLY81    FJS:3T0H ADP:3T0H ADP:3K60             0.24    0.36    0.36    0.24    equal
+P10  ILE96    ILE96    ILE82    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.60    0.39    0.43    0.40    equal
+P11  GLY97    GLY97    GLY83    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.50    0.33    0.33    0.39    equal
+P12  MET98    MET98    MET84    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.42    0.32    0.92    0.21    equal
+P13  ASP102   ASP102   ASP88    FJS:5CF0 ADP:3T0H ADP:3K60             0.33    0.88    1.06    0.75    equal
+P14  LEU103   LEU103   LEU89    FJS:3T0H FJS:5CF0                      0.41    0.68    0.69    1.06    equal
+P15  ASN106   ASN106   ASN92    FJS:3T0H ADP:3T0H ADP:3K60             9.08    3.24    7.41    3.90    own conformation (nearer 3T0H)
+P16  LEU107   LEU107   LEU93    FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    3.74    2.60    0.49    4.09    own conformation (nearer 3T0H)
+P17  GLY108   GLY108   GLY94    FJS:3T0H ADP:3T0H                      6.45    8.43    8.43    3.94    own conformation (nearer 5CF0)  [CHECK: loop moved]
+P18  THR109   THR109   THR95    FJS:3T0H ADP:3T0H                      8.52    8.96    9.62    5.95    own conformation (nearer 5CF0)  [CHECK: loop moved]
+P19  ILE110   ILE110   ILE96    FJS:5CF0 ADP:3T0H                      3.78    5.37    6.76    5.80    own conformation (nearer 3T0H)  [CHECK: loop moved]
+P20  ALA111   ALA111   ALA97    ADP:3T0H                               1.98    3.13    4.81    4.12    own conformation (nearer 3T0H)
+P21  LYS112   LYS112   ARG98    ADP:3K60                               1.45    3.99    10.56   2.50    5CF0-like  [CHECK: loop moved]
+P22  GLY132   GLY132   GLY118   ADP:3T0H                               0.73    8.31    8.31    7.68    own conformation (nearer 5CF0)  [CHECK: loop moved]
+P23  PHE134   PHE134   PHE120   ADP:3T0H                               0.69    6.53    5.04    5.79    own conformation (nearer 5CF0)  [CHECK: loop moved]
+P24  GLY135   GLY135   GLY121   FJS:3T0H FJS:5CF0 ADP:3T0H             0.99    7.99    7.99    7.22    own conformation (nearer 5CF0)  [CHECK: loop moved]
+P25  VAL136   VAL136   VAL122   ADP:3T0H ADP:3K60                      0.63    4.73    6.16    4.29    own conformation (nearer 5CF0)  [CHECK: loop moved]
+P26  GLY137   GLY137   GLY123   ADP:3T0H ADP:3K60                      0.61    0.39    0.39    0.69    equal
+P27  PHE138   PHE138   PHE124   FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.50    0.35    0.26    0.31    equal
+P28  TYR139   TYR139   TYR125   FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.54    0.38    0.54    0.15    equal
+P29  VAL150   VAL150   VAL136   FJS:3T0H FJS:5CF0                      0.58    0.22    0.23    0.63    equal
+P30  THR152   THR152   SER138   FJS:3T0H ADP:3T0H                      0.13    0.22    0.85    0.31    equal
+P31  HIS154   HIS154   ASN140   FJS:3T0H                               0.77    0.26    0.70    0.43    equal
+P32  TRP162   TRP162   TRP148   FJS:3T0H FJS:5CF0                      0.48    0.46    0.40    0.29    equal
+P33  THR184   THR184   THR171   FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.22    0.37    0.41    0.19    equal
+P34  VAL186   VAL186   ILE173   FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60    0.33    0.21    0.60    0.17    equal
+T-H sc = side-chain shift between the two human structures; T-K = 3T0H vs 3K60; H-K = 5CF0 vs 3K60 (A).
+
+==================================================================================================================================
+TABLE 3. SELECTIVITY MAP (human -> 3K60)
+==================================================================================================================================
+Pos  Human    3K60     Status             Human   FJS-d    FJS-d    ADP-d    Reach    Change going human -> 3K60
+                                                  (5CF0)   (3T0H)   (3K60)   (FJS)    
+P1   GLU47    GLU33    CONSERVED          rigid   5.9      6.1      5.4      edge     -
+P2   LEU48    LEU34    CONSERVED          rigid   4.1      4.0      4.5      contact  -
+P3   ASN51    ASN37    CONSERVED          rigid   3.2      3.4      2.9      contact  -
+P4   SER52    ALA38    HANDLE-DIFFERENT   rigid   3.9      4.2      3.8      contact  -1 donor; -1 acceptor
+P5   ASP54    ASP40    CONSERVED          rigid   4.5      4.6      4.8      edge     -
+P6   ALA55    ALA41    CONSERVED          rigid   3.3      3.2      3.3      contact  -
+P7   LYS58    LYS44    CONSERVED          MOBILE  3.2      1.4      3.4      contact  -
+P8   ASP93    ASP79    CONSERVED          rigid   2.7      2.7      1.9      contact  -
+P9   GLY95    GLY81    CONSERVED          rigid   5.5      5.3      5.3      edge     -
+P10  ILE96    ILE82    CONSERVED          rigid   3.4      3.1      3.9      contact  -
+P11  GLY97    GLY83    CONSERVED          rigid   3.3      2.5      3.4      contact  -
+P12  MET98    MET84    CONSERVED          rigid   3.5      3.3      2.8      contact  -
+P13  ASP102   ASP88    CONSERVED          rigid   4.9      5.1      5.3      edge     -
+P14  LEU103   LEU89    CONSERVED          rigid   4.7      4.5      6.5      edge     -
+P15  ASN106   ASN92    SHIFTED            MOBILE  6.8      3.8      2.9      contact  -
+P16  LEU107   LEU93    CONSERVED          MOBILE  3.6      0.8      3.6      contact  -
+P17  GLY108   GLY94    SHIFTED            MOBILE  7.0      3.0      6.3      contact  -
+P18  THR109   THR95    SHIFTED            MOBILE  9.6      3.3      8.8      contact  -
+P19  ILE110   ILE96    SHIFTED            MOBILE  4.4      6.1      7.2      contact  -
+P20  ALA111   ALA97    SHIFTED            MOBILE  7.1      7.3      8.9      far      -
+P21  LYS112   ARG98    HANDLE-SIMILAR     rigid   9.9      10.5     2.4      far      +2 donor
+P22  GLY132   GLY118   SHIFTED            rigid   7.2      6.5      12.5     far      -
+P23  PHE134   PHE120   SHIFTED            rigid   7.4      7.0      7.8      far      -
+P24  GLY135   GLY121   SHIFTED            rigid   3.9      3.9      8.0      contact  -
+P25  VAL136   VAL122   SHIFTED            rigid   5.7      5.4      4.6      edge     -
+P26  GLY137   GLY123   CONSERVED          rigid   6.1      5.7      3.5      edge     -
+P27  PHE138   PHE124   CONSERVED          rigid   3.3      2.9      3.1      contact  -
+P28  TYR139   TYR125   CONSERVED          rigid   4.4      4.6      4.3      contact  -
+P29  VAL150   VAL136   CONSERVED          rigid   3.5      3.0      6.7      contact  -
+P30  THR152   SER138   HANDLE-SIMILAR     rigid   5.1      5.1      5.0      edge     smaller (-27 A3)
+P31  HIS154   ASN140   HANDLE-DIFFERENT   rigid   6.4      5.9      6.6      edge     loses aromatic ring; smaller (-39 A3)
+P32  TRP162   TRP148   CONSERVED          rigid   3.8      4.2      8.8      contact  -
+P33  THR184   THR171   CONSERVED          rigid   3.5      3.4      3.4      contact  -
+P34  VAL186   ILE173   HANDLE-SIMILAR     rigid   3.7      3.4      4.2      contact  bulkier (+27 A3)
+FJS-d / ADP-d = closest heavy-atom distance (A) from the ligand to the residue. Reach: contact <= 4.5 A, edge <= 6.0 A (reachable by growing the ligand), far = beyond.
+HANDLE-DIFFERENT / HANDLE-SIMILAR = sequence differs in 3K60; SHIFTED = same residue but side chain >2.5 A away in 3K60;
+CONSERVED = no handle; NO-3K60-PARTNER = no CE partner, check by eye. 'rigid' human positions are the safest to exploit.
+
+Handles, DIFFERENT residue:
+  SER52    -> ALA38    rigid  reach=contact  FJS-d=3.9  -1 donor; -1 acceptor
+  HIS154   -> ASN140   rigid  reach=edge     FJS-d=5.9  loses aromatic ring; smaller (-39 A3)
+
+Handles, SIMILAR residue:
+  LYS112   -> ARG98    rigid  reach=far      FJS-d=9.9  +2 donor
+  THR152   -> SER138   rigid  reach=edge     FJS-d=5.1  smaller (-27 A3)
+  VAL186   -> ILE173   rigid  reach=contact  FJS-d=3.4  bulkier (+27 A3)
+
+SHIFTED side chains (shape handles):
+  ASN106   -> ASN92    MOBILE reach=contact  FJS-d=3.8  -
+  GLY108   -> GLY94    MOBILE reach=contact  FJS-d=3.0  -
+  THR109   -> THR95    MOBILE reach=contact  FJS-d=3.3  -
+  ILE110   -> ILE96    MOBILE reach=contact  FJS-d=4.4  -
+  ALA111   -> ALA97    MOBILE reach=far      FJS-d=7.1  -
+  GLY132   -> GLY118   rigid  reach=far      FJS-d=6.5  -
+  PHE134   -> PHE120   rigid  reach=far      FJS-d=7.0  -
+  GLY135   -> GLY121   rigid  reach=contact  FJS-d=3.9  -
+  VAL136   -> VAL122   rigid  reach=edge     FJS-d=5.4  -
+
+No 3K60 partner (check):
+  none
+
+Conserved in all three (potency anchors, no selectivity):
+  GLU47 LEU48 ASN51 ASP54 ALA55 LYS58 ASP93 GLY95 ILE96 GLY97 MET98 ASP102 LEU103 LEU107 GLY137 PHE138 TYR139 VAL150 TRP162 THR184
+
+==================================================================================================================================
+TABLE 4. PROPERTIES AT EACH POSITION (side chains only)
+==================================================================================================================================
+Pos  | Human       KD Class        Ar  Ion        D  A  | 3K60        KD Class        Ar  Ion        D  A 
+P1   | GLU47     -3.5 acidic(-)    -   acid       0  2  | GLU33     -3.5 acidic(-)    -   acid       0  2 
+P2   | LEU48      3.8 hydrophobic  -   -          0  0  | LEU34      3.8 hydrophobic  -   -          0  0 
+P3   | ASN51     -3.5 polar        -   -          1  1  | ASN37     -3.5 polar        -   -          1  1 
+P4   | SER52     -0.8 polar        -   -          1  1  | ALA38      1.8 hydrophobic  -   -          0  0 
+P5   | ASP54     -3.5 acidic(-)    -   acid       0  2  | ASP40     -3.5 acidic(-)    -   acid       0  2 
+P6   | ALA55      1.8 hydrophobic  -   -          0  0  | ALA41      1.8 hydrophobic  -   -          0  0 
+P7   | LYS58     -3.9 basic(+)     -   base       1  0  | LYS44     -3.9 basic(+)     -   base       1  0 
+P8   | ASP93     -3.5 acidic(-)    -   acid       0  2  | ASP79     -3.5 acidic(-)    -   acid       0  2 
+P9   | GLY95     -0.4 Gly          -   -          0  0  | GLY81     -0.4 Gly          -   -          0  0 
+P10  | ILE96      4.5 hydrophobic  -   -          0  0  | ILE82      4.5 hydrophobic  -   -          0  0 
+P11  | GLY97     -0.4 Gly          -   -          0  0  | GLY83     -0.4 Gly          -   -          0  0 
+P12  | MET98      1.9 hydrophobic  -   -          0  0  | MET84      1.9 hydrophobic  -   -          0  0 
+P13  | ASP102    -3.5 acidic(-)    -   acid       0  2  | ASP88     -3.5 acidic(-)    -   acid       0  2 
+P14  | LEU103     3.8 hydrophobic  -   -          0  0  | LEU89      3.8 hydrophobic  -   -          0  0 
+P15  | ASN106    -3.5 polar        -   -          1  1  | ASN92     -3.5 polar        -   -          1  1 
+P16  | LEU107     3.8 hydrophobic  -   -          0  0  | LEU93      3.8 hydrophobic  -   -          0  0 
+P17  | GLY108    -0.4 Gly          -   -          0  0  | GLY94     -0.4 Gly          -   -          0  0 
+P18  | THR109    -0.7 polar        -   -          1  1  | THR95     -0.7 polar        -   -          1  1 
+P19  | ILE110     4.5 hydrophobic  -   -          0  0  | ILE96      4.5 hydrophobic  -   -          0  0 
+P20  | ALA111     1.8 hydrophobic  -   -          0  0  | ALA97      1.8 hydrophobic  -   -          0  0 
+P21  | LYS112    -3.9 basic(+)     -   base       1  0  | ARG98     -4.5 basic(+)     -   base       3  0 
+P22  | GLY132    -0.4 Gly          -   -          0  0  | GLY118    -0.4 Gly          -   -          0  0 
+P23  | PHE134     2.8 hydrophobic  Y   -          0  0  | PHE120     2.8 hydrophobic  Y   -          0  0 
+P24  | GLY135    -0.4 Gly          -   -          0  0  | GLY121    -0.4 Gly          -   -          0  0 
+P25  | VAL136     4.2 hydrophobic  -   -          0  0  | VAL122     4.2 hydrophobic  -   -          0  0 
+P26  | GLY137    -0.4 Gly          -   -          0  0  | GLY123    -0.4 Gly          -   -          0  0 
+P27  | PHE138     2.8 hydrophobic  Y   -          0  0  | PHE124     2.8 hydrophobic  Y   -          0  0 
+P28  | TYR139    -1.3 polar        Y   weak(Tyr)  1  1  | TYR125    -1.3 polar        Y   weak(Tyr)  1  1 
+P29  | VAL150     4.2 hydrophobic  -   -          0  0  | VAL136     4.2 hydrophobic  -   -          0  0 
+P30  | THR152    -0.7 polar        -   -          1  1  | SER138    -0.8 polar        -   -          1  1 
+P31  | HIS154    -3.2 His(+/0)     Y   His(pH)    1  1  | ASN140    -3.5 polar        -   -          1  1 
+P32  | TRP162    -0.9 hydrophobic  Y   -          1  0  | TRP148    -0.9 hydrophobic  Y   -          1  0 
+P33  | THR184    -0.7 polar        -   -          1  1  | THR171    -0.7 polar        -   -          1  1 
+P34  | VAL186     4.2 hydrophobic  -   -          0  0  | ILE173     4.5 hydrophobic  -   -          0  0 
+Backbone N-H donors and C=O acceptors are not counted. KD = Kyte-Doolittle. Ar = aromatic. Ion = ionisable. D/A = donors/acceptors.

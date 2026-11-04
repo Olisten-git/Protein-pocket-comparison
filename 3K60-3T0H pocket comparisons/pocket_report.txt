@@ -1,0 +1,139 @@
+CE alignment RMSD: 1.77 A over 200 residues
+Residues paired by the CE alignment: 200
+
+Pocket = residues with any atom within 5.0 A of ADP (probe taken from 3K60, MOB superimposed on it)
+
+====================================================================================================
+TABLE 1. RESIDUES IN EACH POCKET
+====================================================================================================
+3K60 (22 residues): GLU33 LEU34 ASN37 ALA38 ASP40 ALA41 LYS44 ASP79 GLY81 ILE82 GLY83 MET84 ASP88 ASN92 LEU93 ARG98 VAL122 GLY123 PHE124 TYR125 THR171 ILE173
+3T0H (28 residues): LEU48 ASN51 SER52 ASP54 ALA55 LYS58 ASP93 GLY95 ILE96 GLY97 MET98 ASP102 ASN106 LEU107 GLY108 THR109 ILE110 ALA111 GLY132 PHE134 GLY135 VAL136 GLY137 PHE138 TYR139 THR152 THR184 VAL186
+
+====================================================================================================
+TABLE 2. RESIDUES AT THE SAME POSITION IN 3D (aligned pockets)
+====================================================================================================
+Pos  3K60      3T0H      In pocket of           CA-CA(A)  SideChain(A)   Paired by
+P1   GLU33     GLU47     3K60 pocket only       0.04      0.56           CE alignment
+P2   LEU34     LEU48     both pockets           0.17      0.27           CE alignment
+P3   ASN37     ASN51     both pockets           0.41      0.37           CE alignment
+P4   ALA38     SER52     both pockets           0.45      0.84           CE alignment
+P5   ASP40     ASP54     both pockets           0.53      0.63           CE alignment
+P6   ALA41     ALA55     both pockets           0.38      0.33           CE alignment
+P7   LYS44     LYS58     both pockets           0.70      0.65           CE alignment
+P8   ASP79     ASP93     both pockets           0.42      0.45           CE alignment
+P9   GLY81     GLY95     both pockets           0.36      0.36           CE alignment
+P10  ILE82     ILE96     both pockets           0.39      0.43           CE alignment
+P11  GLY83     GLY97     both pockets           0.33      0.33           CE alignment
+P12  MET84     MET98     both pockets           0.32      0.92           CE alignment
+P13  ASP88     ASP102    both pockets           0.88      1.06           CE alignment
+P14  ASN92     ASN106    both pockets           3.24      7.41           CE alignment
+P15  LEU93     LEU107    both pockets           2.60      0.49           CE alignment
+P16  GLY94     GLY108    3T0H pocket only       8.43      8.43           CE alignment  [CHECK: CA-CA > 3.5 A]
+P17  THR95     THR109    3T0H pocket only       8.96      9.62           CE alignment  [CHECK: CA-CA > 3.5 A]
+P18  ILE96     ILE110    3T0H pocket only       5.37      6.76           CE alignment  [CHECK: CA-CA > 3.5 A]
+P19  ALA97     ALA111    3T0H pocket only       3.13      4.81           CE alignment
+P20  ARG98     LYS112    3K60 pocket only       3.99      10.56          CE alignment  [CHECK: CA-CA > 3.5 A]
+P21  GLY121    GLY132    3T0H pocket only       3.58      3.58           CE alignment  [CHECK: CA-CA > 3.5 A]
+P22  VAL122    VAL136    both pockets           4.73      6.16           CE alignment  [CHECK: CA-CA > 3.5 A]
+P23  GLY123    GLY137    both pockets           0.39      0.39           CE alignment
+P24  PHE124    PHE138    both pockets           0.35      0.26           CE alignment
+P25  TYR125    TYR139    both pockets           0.38      0.54           CE alignment
+P26  SER138    THR152    3T0H pocket only       0.22      0.85           CE alignment
+P27  THR171    THR184    both pockets           0.37      0.41           CE alignment
+P28  ILE173    VAL186    both pockets           0.21      0.60           CE alignment
+P29  ---       PHE134    3T0H pocket only       -         -              no partner
+P30  ---       GLY135    3T0H pocket only       -         -              no partner
+(SideChain = distance between side-chain centroids; a large value means the same sequence position but the side chain points elsewhere.)
+
+====================================================================================================
+TABLE 3. IDENTICAL / SIMILAR / DIFFERENT AT EACH POSITION
+====================================================================================================
+Similar = same group: AVILM FWY ST NQ DE KRH G P C.   Change is read as 3K60 -> 3T0H
+Pos  3K60      3T0H      Category       Change
+P1   GLU33     GLU47     IDENTICAL      -
+P2   LEU34     LEU48     IDENTICAL      -
+P3   ASN37     ASN51     IDENTICAL      -
+P4   ALA38     SER52     DIFFERENT      +1 donor; +1 acceptor
+P5   ASP40     ASP54     IDENTICAL      -
+P6   ALA41     ALA55     IDENTICAL      -
+P7   LYS44     LYS58     IDENTICAL      -
+P8   ASP79     ASP93     IDENTICAL      -
+P9   GLY81     GLY95     IDENTICAL      -
+P10  ILE82     ILE96     IDENTICAL      -
+P11  GLY83     GLY97     IDENTICAL      -
+P12  MET84     MET98     IDENTICAL      -
+P13  ASP88     ASP102    IDENTICAL      -
+P14  ASN92     ASN106    IDENTICAL      -
+P15  LEU93     LEU107    IDENTICAL      -
+P16  GLY94     GLY108    IDENTICAL      -
+P17  THR95     THR109    IDENTICAL      -
+P18  ILE96     ILE110    IDENTICAL      -
+P19  ALA97     ALA111    IDENTICAL      -
+P20  ARG98     LYS112    SIMILAR        -2 donor
+P21  GLY121    GLY132    IDENTICAL      -
+P22  VAL122    VAL136    IDENTICAL      -
+P23  GLY123    GLY137    IDENTICAL      -
+P24  PHE124    PHE138    IDENTICAL      -
+P25  TYR125    TYR139    IDENTICAL      -
+P26  SER138    THR152    SIMILAR        bulkier (+27 A3)
+P27  THR171    THR184    IDENTICAL      -
+P28  ILE173    VAL186    SIMILAR        smaller (-27 A3)
+P29  ---       PHE134    NO EQUIVALENT  no equivalent residue at this position
+P30  ---       GLY135    NO EQUIVALENT  no equivalent residue at this position
+Totals: IDENTICAL 24, SIMILAR 3, DIFFERENT 1, NO EQUIVALENT 2
+
+====================================================================================================
+TABLE 4. PROPERTIES OF THE RESIDUES AT EACH POSITION (side chains only)
+====================================================================================================
+KD = Kyte-Doolittle hydrophobicity (+ve hydrophobic).  Ar = aromatic.  Ion = ionisable.  D/A = side-chain H-bond donors/acceptors.
+Pos  | 3K60        KD Class        Ar  Ion        D  A  | 3T0H        KD Class        Ar  Ion        D  A 
+P1   | GLU33     -3.5 acidic(-)    -   acid       0  2  | GLU47     -3.5 acidic(-)    -   acid       0  2 
+P2   | LEU34      3.8 hydrophobic  -   -          0  0  | LEU48      3.8 hydrophobic  -   -          0  0 
+P3   | ASN37     -3.5 polar        -   -          1  1  | ASN51     -3.5 polar        -   -          1  1 
+P4   | ALA38      1.8 hydrophobic  -   -          0  0  | SER52     -0.8 polar        -   -          1  1 
+P5   | ASP40     -3.5 acidic(-)    -   acid       0  2  | ASP54     -3.5 acidic(-)    -   acid       0  2 
+P6   | ALA41      1.8 hydrophobic  -   -          0  0  | ALA55      1.8 hydrophobic  -   -          0  0 
+P7   | LYS44     -3.9 basic(+)     -   base       1  0  | LYS58     -3.9 basic(+)     -   base       1  0 
+P8   | ASP79     -3.5 acidic(-)    -   acid       0  2  | ASP93     -3.5 acidic(-)    -   acid       0  2 
+P9   | GLY81     -0.4 Gly          -   -          0  0  | GLY95     -0.4 Gly          -   -          0  0 
+P10  | ILE82      4.5 hydrophobic  -   -          0  0  | ILE96      4.5 hydrophobic  -   -          0  0 
+P11  | GLY83     -0.4 Gly          -   -          0  0  | GLY97     -0.4 Gly          -   -          0  0 
+P12  | MET84      1.9 hydrophobic  -   -          0  0  | MET98      1.9 hydrophobic  -   -          0  0 
+P13  | ASP88     -3.5 acidic(-)    -   acid       0  2  | ASP102    -3.5 acidic(-)    -   acid       0  2 
+P14  | ASN92     -3.5 polar        -   -          1  1  | ASN106    -3.5 polar        -   -          1  1 
+P15  | LEU93      3.8 hydrophobic  -   -          0  0  | LEU107     3.8 hydrophobic  -   -          0  0 
+P16  | GLY94     -0.4 Gly          -   -          0  0  | GLY108    -0.4 Gly          -   -          0  0 
+P17  | THR95     -0.7 polar        -   -          1  1  | THR109    -0.7 polar        -   -          1  1 
+P18  | ILE96      4.5 hydrophobic  -   -          0  0  | ILE110     4.5 hydrophobic  -   -          0  0 
+P19  | ALA97      1.8 hydrophobic  -   -          0  0  | ALA111     1.8 hydrophobic  -   -          0  0 
+P20  | ARG98     -4.5 basic(+)     -   base       3  0  | LYS112    -3.9 basic(+)     -   base       1  0 
+P21  | GLY121    -0.4 Gly          -   -          0  0  | GLY132    -0.4 Gly          -   -          0  0 
+P22  | VAL122     4.2 hydrophobic  -   -          0  0  | VAL136     4.2 hydrophobic  -   -          0  0 
+P23  | GLY123    -0.4 Gly          -   -          0  0  | GLY137    -0.4 Gly          -   -          0  0 
+P24  | PHE124     2.8 hydrophobic  Y   -          0  0  | PHE138     2.8 hydrophobic  Y   -          0  0 
+P25  | TYR125    -1.3 polar        Y   weak(Tyr)  1  1  | TYR139    -1.3 polar        Y   weak(Tyr)  1  1 
+P26  | SER138    -0.8 polar        -   -          1  1  | THR152    -0.7 polar        -   -          1  1 
+P27  | THR171    -0.7 polar        -   -          1  1  | THR184    -0.7 polar        -   -          1  1 
+P28  | ILE173     4.5 hydrophobic  -   -          0  0  | VAL186     4.2 hydrophobic  -   -          0  0 
+P29  | ---          - -            -   -          -  -  | PHE134     2.8 hydrophobic  Y   -          0  0 
+P30  | ---          - -            -   -          -  -  | GLY135    -0.4 Gly          -   -          0  0 
+Backbone: every residue except Pro also has a backbone N-H donor, and every residue a C=O acceptor (not counted above).
+
+====================================================================================================
+TABLE 5. POCKET TOTALS
+====================================================================================================
+property                        3K60 positions    3T0H positions    3K60 pocket only  3T0H pocket only  
+residues                        28                30                22                28                
+hydrophobic (A,V,I,L,M,F,W,C)   11                11                9                 11                
+polar uncharged (S,T,N,Q,Y)     6                 7                 4                 7                 
+acidic (D,E)                    4                 4                 4                 3                 
+basic (K,R)                     2                 2                 2                 1                 
+His                             0                 0                 0                 0                 
+Gly                             5                 6                 3                 6                 
+Pro                             0                 0                 0                 0                 
+aromatic (F,W,Y,H)              2                 3                 2                 3                 
+net charge pH7 (His=0)          -2                -2                -2                -2                
+mean Kyte-Doolittle             0.02              0.02              -0.16             0.29              
+side-chain H-bond donors        10                9                 8                 8                 
+side-chain H-bond acceptors     14                15                12                13                
+('positions' columns compare like with like, using the residues at every matched position.)

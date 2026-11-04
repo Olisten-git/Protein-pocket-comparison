@@ -1,0 +1,35 @@
+pos,3T0H,5CF0,3K60,in_pocket_of,FJS_d_5CF0,FJS_d_3T0H,ADP_d_3K60,reach,human_sc_shift,T_K_CA,T_K_sc,H_K_CA,k60_looks_like,category,status,human_mobility,change_human_to_3K60,human_KD,human_class,human_arom,human_ion,human_don,human_acc,k60_KD,k60_class,k60_arom,k60_ion,k60_don,k60_acc
+P1,GLU47,GLU47,GLU33,ADP:3K60,5.9,6.1,5.4,edge,0.22,0.04,0.56,0.16,equal,IDENTICAL,CONSERVED,rigid,-,-3.5,acidic(-),-,acid,0,2,-3.5,acidic(-),-,acid,0,2
+P2,LEU48,LEU48,LEU34,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,4.1,4.0,4.5,contact,0.06,0.17,0.27,0.28,equal,IDENTICAL,CONSERVED,rigid,-,3.8,hydrophobic,-,-,0,0,3.8,hydrophobic,-,-,0,0
+P3,ASN51,ASN51,ASN37,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.2,3.4,2.9,contact,0.35,0.41,0.37,0.53,equal,IDENTICAL,CONSERVED,rigid,-,-3.5,polar,-,-,1,1,-3.5,polar,-,-,1,1
+P4,SER52,SER52,ALA38,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.9,4.2,3.8,contact,0.27,0.45,0.84,0.61,equal,DIFFERENT,HANDLE-DIFFERENT,rigid,-1 donor; -1 acceptor,-0.8,polar,-,-,1,1,1.8,hydrophobic,-,-,0,0
+P5,ASP54,ASP54,ASP40,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,4.5,4.6,4.8,edge,0.43,0.53,0.63,0.68,equal,IDENTICAL,CONSERVED,rigid,-,-3.5,acidic(-),-,acid,0,2,-3.5,acidic(-),-,acid,0,2
+P6,ALA55,ALA55,ALA41,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.3,3.2,3.3,contact,0.46,0.38,0.33,0.52,equal,IDENTICAL,CONSERVED,rigid,-,1.8,hydrophobic,-,-,0,0,1.8,hydrophobic,-,-,0,0
+P7,LYS58,LYS58,LYS44,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.2,1.4,3.4,contact,3.13,0.70,0.65,0.53,equal,IDENTICAL,CONSERVED,MOBILE,-,-3.9,basic(+),-,base,1,0,-3.9,basic(+),-,base,1,0
+P8,ASP93,ASP93,ASP79,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,2.7,2.7,1.9,contact,0.23,0.42,0.45,0.28,equal,IDENTICAL,CONSERVED,rigid,-,-3.5,acidic(-),-,acid,0,2,-3.5,acidic(-),-,acid,0,2
+P9,GLY95,GLY95,GLY81,FJS:3T0H ADP:3T0H ADP:3K60,5.5,5.3,5.3,edge,0.24,0.36,0.36,0.24,equal,IDENTICAL,CONSERVED,rigid,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P10,ILE96,ILE96,ILE82,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.4,3.1,3.9,contact,0.60,0.39,0.43,0.40,equal,IDENTICAL,CONSERVED,rigid,-,4.5,hydrophobic,-,-,0,0,4.5,hydrophobic,-,-,0,0
+P11,GLY97,GLY97,GLY83,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.3,2.5,3.4,contact,0.50,0.33,0.33,0.39,equal,IDENTICAL,CONSERVED,rigid,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P12,MET98,MET98,MET84,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.5,3.3,2.8,contact,0.42,0.32,0.92,0.21,equal,IDENTICAL,CONSERVED,rigid,-,1.9,hydrophobic,-,-,0,0,1.9,hydrophobic,-,-,0,0
+P13,ASP102,ASP102,ASP88,FJS:5CF0 ADP:3T0H ADP:3K60,4.9,5.1,5.3,edge,0.33,0.88,1.06,0.75,equal,IDENTICAL,CONSERVED,rigid,-,-3.5,acidic(-),-,acid,0,2,-3.5,acidic(-),-,acid,0,2
+P14,LEU103,LEU103,LEU89,FJS:3T0H FJS:5CF0,4.7,4.5,6.5,edge,0.41,0.68,0.69,1.06,equal,IDENTICAL,CONSERVED,rigid,-,3.8,hydrophobic,-,-,0,0,3.8,hydrophobic,-,-,0,0
+P15,ASN106,ASN106,ASN92,FJS:3T0H ADP:3T0H ADP:3K60,6.8,3.8,2.9,contact,9.08,3.24,7.41,3.90,own conformation (nearer 3T0H),IDENTICAL,SHIFTED,MOBILE,-,-3.5,polar,-,-,1,1,-3.5,polar,-,-,1,1
+P16,LEU107,LEU107,LEU93,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.6,0.8,3.6,contact,3.74,2.60,0.49,4.09,own conformation (nearer 3T0H),IDENTICAL,CONSERVED,MOBILE,-,3.8,hydrophobic,-,-,0,0,3.8,hydrophobic,-,-,0,0
+P17,GLY108,GLY108,GLY94,FJS:3T0H ADP:3T0H,7.0,3.0,6.3,contact,6.45,8.43,8.43,3.94,own conformation (nearer 5CF0),IDENTICAL,SHIFTED,MOBILE,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P18,THR109,THR109,THR95,FJS:3T0H ADP:3T0H,9.6,3.3,8.8,contact,8.52,8.96,9.62,5.95,own conformation (nearer 5CF0),IDENTICAL,SHIFTED,MOBILE,-,-0.7,polar,-,-,1,1,-0.7,polar,-,-,1,1
+P19,ILE110,ILE110,ILE96,FJS:5CF0 ADP:3T0H,4.4,6.1,7.2,contact,3.78,5.37,6.76,5.80,own conformation (nearer 3T0H),IDENTICAL,SHIFTED,MOBILE,-,4.5,hydrophobic,-,-,0,0,4.5,hydrophobic,-,-,0,0
+P20,ALA111,ALA111,ALA97,ADP:3T0H,7.1,7.3,8.9,far,1.98,3.13,4.81,4.12,own conformation (nearer 3T0H),IDENTICAL,SHIFTED,MOBILE,-,1.8,hydrophobic,-,-,0,0,1.8,hydrophobic,-,-,0,0
+P21,LYS112,LYS112,ARG98,ADP:3K60,9.9,10.5,2.4,far,1.45,3.99,10.56,2.50,5CF0-like,SIMILAR,HANDLE-SIMILAR,rigid,+2 donor,-3.9,basic(+),-,base,1,0,-4.5,basic(+),-,base,3,0
+P22,GLY132,GLY132,GLY118,ADP:3T0H,7.2,6.5,12.5,far,0.73,8.31,8.31,7.68,own conformation (nearer 5CF0),IDENTICAL,SHIFTED,rigid,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P23,PHE134,PHE134,PHE120,ADP:3T0H,7.4,7.0,7.8,far,0.69,6.53,5.04,5.79,own conformation (nearer 5CF0),IDENTICAL,SHIFTED,rigid,-,2.8,hydrophobic,Y,-,0,0,2.8,hydrophobic,Y,-,0,0
+P24,GLY135,GLY135,GLY121,FJS:3T0H FJS:5CF0 ADP:3T0H,3.9,3.9,8.0,contact,0.99,7.99,7.99,7.22,own conformation (nearer 5CF0),IDENTICAL,SHIFTED,rigid,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P25,VAL136,VAL136,VAL122,ADP:3T0H ADP:3K60,5.7,5.4,4.6,edge,0.63,4.73,6.16,4.29,own conformation (nearer 5CF0),IDENTICAL,SHIFTED,rigid,-,4.2,hydrophobic,-,-,0,0,4.2,hydrophobic,-,-,0,0
+P26,GLY137,GLY137,GLY123,ADP:3T0H ADP:3K60,6.1,5.7,3.5,edge,0.61,0.39,0.39,0.69,equal,IDENTICAL,CONSERVED,rigid,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P27,PHE138,PHE138,PHE124,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.3,2.9,3.1,contact,0.50,0.35,0.26,0.31,equal,IDENTICAL,CONSERVED,rigid,-,2.8,hydrophobic,Y,-,0,0,2.8,hydrophobic,Y,-,0,0
+P28,TYR139,TYR139,TYR125,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,4.4,4.6,4.3,contact,0.54,0.38,0.54,0.15,equal,IDENTICAL,CONSERVED,rigid,-,-1.3,polar,Y,weak(Tyr),1,1,-1.3,polar,Y,weak(Tyr),1,1
+P29,VAL150,VAL150,VAL136,FJS:3T0H FJS:5CF0,3.5,3.0,6.7,contact,0.58,0.22,0.23,0.63,equal,IDENTICAL,CONSERVED,rigid,-,4.2,hydrophobic,-,-,0,0,4.2,hydrophobic,-,-,0,0
+P30,THR152,THR152,SER138,FJS:3T0H ADP:3T0H,5.1,5.1,5.0,edge,0.13,0.22,0.85,0.31,equal,SIMILAR,HANDLE-SIMILAR,rigid,smaller (-27 A3),-0.7,polar,-,-,1,1,-0.8,polar,-,-,1,1
+P31,HIS154,HIS154,ASN140,FJS:3T0H,6.4,5.9,6.6,edge,0.77,0.26,0.70,0.43,equal,DIFFERENT,HANDLE-DIFFERENT,rigid,loses aromatic ring; smaller (-39 A3),-3.2,His(+/0),Y,His(pH),1,1,-3.5,polar,-,-,1,1
+P32,TRP162,TRP162,TRP148,FJS:3T0H FJS:5CF0,3.8,4.2,8.8,contact,0.48,0.46,0.40,0.29,equal,IDENTICAL,CONSERVED,rigid,-,-0.9,hydrophobic,Y,-,1,0,-0.9,hydrophobic,Y,-,1,0
+P33,THR184,THR184,THR171,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.5,3.4,3.4,contact,0.22,0.37,0.41,0.19,equal,IDENTICAL,CONSERVED,rigid,-,-0.7,polar,-,-,1,1,-0.7,polar,-,-,1,1
+P34,VAL186,VAL186,ILE173,FJS:3T0H FJS:5CF0 ADP:3T0H ADP:3K60,3.7,3.4,4.2,contact,0.33,0.21,0.60,0.17,equal,SIMILAR,HANDLE-SIMILAR,rigid,bulkier (+27 A3),4.2,hydrophobic,-,-,0,0,4.5,hydrophobic,-,-,0,0

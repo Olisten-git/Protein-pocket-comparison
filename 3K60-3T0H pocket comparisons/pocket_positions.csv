@@ -1,0 +1,31 @@
+pos,3K60,3T0H,in_pocket_of,CA_CA_A,sidechain_centroid_A,paired_by,category,change,3K60_KD,3K60_class,3K60_aromatic,3K60_ionisable,3K60_donors,3K60_acceptors,3T0H_KD,3T0H_class,3T0H_aromatic,3T0H_ionisable,3T0H_donors,3T0H_acceptors
+P1,GLU33,GLU47,3K60 pocket only,0.04,0.56,CE alignment,IDENTICAL,-,-3.5,acidic(-),-,acid,0,2,-3.5,acidic(-),-,acid,0,2
+P2,LEU34,LEU48,both pockets,0.17,0.27,CE alignment,IDENTICAL,-,3.8,hydrophobic,-,-,0,0,3.8,hydrophobic,-,-,0,0
+P3,ASN37,ASN51,both pockets,0.41,0.37,CE alignment,IDENTICAL,-,-3.5,polar,-,-,1,1,-3.5,polar,-,-,1,1
+P4,ALA38,SER52,both pockets,0.45,0.84,CE alignment,DIFFERENT,+1 donor; +1 acceptor,1.8,hydrophobic,-,-,0,0,-0.8,polar,-,-,1,1
+P5,ASP40,ASP54,both pockets,0.53,0.63,CE alignment,IDENTICAL,-,-3.5,acidic(-),-,acid,0,2,-3.5,acidic(-),-,acid,0,2
+P6,ALA41,ALA55,both pockets,0.38,0.33,CE alignment,IDENTICAL,-,1.8,hydrophobic,-,-,0,0,1.8,hydrophobic,-,-,0,0
+P7,LYS44,LYS58,both pockets,0.70,0.65,CE alignment,IDENTICAL,-,-3.9,basic(+),-,base,1,0,-3.9,basic(+),-,base,1,0
+P8,ASP79,ASP93,both pockets,0.42,0.45,CE alignment,IDENTICAL,-,-3.5,acidic(-),-,acid,0,2,-3.5,acidic(-),-,acid,0,2
+P9,GLY81,GLY95,both pockets,0.36,0.36,CE alignment,IDENTICAL,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P10,ILE82,ILE96,both pockets,0.39,0.43,CE alignment,IDENTICAL,-,4.5,hydrophobic,-,-,0,0,4.5,hydrophobic,-,-,0,0
+P11,GLY83,GLY97,both pockets,0.33,0.33,CE alignment,IDENTICAL,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P12,MET84,MET98,both pockets,0.32,0.92,CE alignment,IDENTICAL,-,1.9,hydrophobic,-,-,0,0,1.9,hydrophobic,-,-,0,0
+P13,ASP88,ASP102,both pockets,0.88,1.06,CE alignment,IDENTICAL,-,-3.5,acidic(-),-,acid,0,2,-3.5,acidic(-),-,acid,0,2
+P14,ASN92,ASN106,both pockets,3.24,7.41,CE alignment,IDENTICAL,-,-3.5,polar,-,-,1,1,-3.5,polar,-,-,1,1
+P15,LEU93,LEU107,both pockets,2.60,0.49,CE alignment,IDENTICAL,-,3.8,hydrophobic,-,-,0,0,3.8,hydrophobic,-,-,0,0
+P16,GLY94,GLY108,3T0H pocket only,8.43,8.43,CE alignment  [CHECK: CA-CA > 3.5 A],IDENTICAL,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P17,THR95,THR109,3T0H pocket only,8.96,9.62,CE alignment  [CHECK: CA-CA > 3.5 A],IDENTICAL,-,-0.7,polar,-,-,1,1,-0.7,polar,-,-,1,1
+P18,ILE96,ILE110,3T0H pocket only,5.37,6.76,CE alignment  [CHECK: CA-CA > 3.5 A],IDENTICAL,-,4.5,hydrophobic,-,-,0,0,4.5,hydrophobic,-,-,0,0
+P19,ALA97,ALA111,3T0H pocket only,3.13,4.81,CE alignment,IDENTICAL,-,1.8,hydrophobic,-,-,0,0,1.8,hydrophobic,-,-,0,0
+P20,ARG98,LYS112,3K60 pocket only,3.99,10.56,CE alignment  [CHECK: CA-CA > 3.5 A],SIMILAR,-2 donor,-4.5,basic(+),-,base,3,0,-3.9,basic(+),-,base,1,0
+P21,GLY121,GLY132,3T0H pocket only,3.58,3.58,CE alignment  [CHECK: CA-CA > 3.5 A],IDENTICAL,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P22,VAL122,VAL136,both pockets,4.73,6.16,CE alignment  [CHECK: CA-CA > 3.5 A],IDENTICAL,-,4.2,hydrophobic,-,-,0,0,4.2,hydrophobic,-,-,0,0
+P23,GLY123,GLY137,both pockets,0.39,0.39,CE alignment,IDENTICAL,-,-0.4,Gly,-,-,0,0,-0.4,Gly,-,-,0,0
+P24,PHE124,PHE138,both pockets,0.35,0.26,CE alignment,IDENTICAL,-,2.8,hydrophobic,Y,-,0,0,2.8,hydrophobic,Y,-,0,0
+P25,TYR125,TYR139,both pockets,0.38,0.54,CE alignment,IDENTICAL,-,-1.3,polar,Y,weak(Tyr),1,1,-1.3,polar,Y,weak(Tyr),1,1
+P26,SER138,THR152,3T0H pocket only,0.22,0.85,CE alignment,SIMILAR,bulkier (+27 A3),-0.8,polar,-,-,1,1,-0.7,polar,-,-,1,1
+P27,THR171,THR184,both pockets,0.37,0.41,CE alignment,IDENTICAL,-,-0.7,polar,-,-,1,1,-0.7,polar,-,-,1,1
+P28,ILE173,VAL186,both pockets,0.21,0.60,CE alignment,SIMILAR,smaller (-27 A3),4.5,hydrophobic,-,-,0,0,4.2,hydrophobic,-,-,0,0
+P29,---,PHE134,3T0H pocket only,,,no partner,NO EQUIVALENT,no equivalent residue at this position,-,-,-,-,-,-,2.8,hydrophobic,Y,-,0,0
+P30,---,GLY135,3T0H pocket only,,,no partner,NO EQUIVALENT,no equivalent residue at this position,-,-,-,-,-,-,-0.4,Gly,-,-,0,0

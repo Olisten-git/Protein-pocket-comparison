@@ -1,0 +1,171 @@
+CE alignment RMSD: 1.09 A over 200 residues
+Residues paired by the CE alignment: 200
+
+Pocket = residues with any atom within 5.0 A of resn FJS (ligand in 5CF0, 3T0H superimposed on it)
+Positions listed = union of both pockets, so cutoff edge effects do not hide residues.
+
+====================================================================================================
+TABLE 1. RESIDUES IN EACH POCKET
+====================================================================================================
+5CF0 (21 residues): LEU48 ASN51 SER52 ASP54 ALA55 LYS58 ASP93 ILE96 GLY97 MET98 ASP102 LEU103 LEU107 ILE110 GLY135 PHE138 TYR139 VAL150 TRP162 THR184 VAL186
+3T0H (25 residues): LEU48 ASN51 SER52 ASP54 ALA55 LYS58 ASP93 GLY95 ILE96 GLY97 MET98 LEU103 ASN106 LEU107 GLY108 THR109 GLY135 PHE138 TYR139 VAL150 THR152 HIS154 TRP162 THR184 VAL186
+
+====================================================================================================
+TABLE 2. RESIDUES AT THE SAME POSITION IN 3D (aligned pockets)
+====================================================================================================
+Pos  5CF0      3T0H      In pocket of           CA-CA(A)  SideChain(A)   Paired by
+P1   LEU48     LEU48     both pockets           0.15      0.06           CE alignment
+P2   ASN51     ASN51     both pockets           0.36      0.35           CE alignment
+P3   SER52     SER52     both pockets           0.36      0.27           CE alignment
+P4   ASP54     ASP54     both pockets           0.39      0.43           CE alignment
+P5   ALA55     ALA55     both pockets           0.42      0.46           CE alignment
+P6   LYS58     LYS58     both pockets           0.54      3.13           CE alignment
+P7   ASP93     ASP93     both pockets           0.16      0.23           CE alignment
+P8   GLY95     GLY95     3T0H pocket only       0.24      0.24           CE alignment
+P9   ILE96     ILE96     both pockets           0.52      0.60           CE alignment
+P10  GLY97     GLY97     both pockets           0.50      0.50           CE alignment
+P11  MET98     MET98     both pockets           0.35      0.42           CE alignment
+P12  ASP102    ASP102    5CF0 pocket only       0.16      0.33           CE alignment
+P13  LEU103    LEU103    both pockets           0.51      0.41           CE alignment
+P14  ASN106    ASN106    3T0H pocket only       5.88      9.08           CE alignment  [CHECK: CA-CA > 3.5 A]
+P15  LEU107    LEU107    both pockets           3.64      3.74           CE alignment  [CHECK: CA-CA > 3.5 A]
+P16  GLY108    GLY108    3T0H pocket only       6.45      6.45           CE alignment  [CHECK: CA-CA > 3.5 A]
+P17  THR109    THR109    3T0H pocket only       6.02      8.52           CE alignment  [CHECK: CA-CA > 3.5 A]
+P18  ILE110    ILE110    5CF0 pocket only       1.59      3.78           CE alignment
+P19  GLY135    GLY135    both pockets           0.99      0.99           CE alignment
+P20  PHE138    PHE138    both pockets           0.58      0.50           CE alignment
+P21  TYR139    TYR139    both pockets           0.49      0.54           CE alignment
+P22  VAL150    VAL150    both pockets           0.47      0.58           CE alignment
+P23  THR152    THR152    3T0H pocket only       0.11      0.13           CE alignment
+P24  HIS154    HIS154    3T0H pocket only       0.44      0.77           CE alignment
+P25  TRP162    TRP162    both pockets           0.31      0.48           CE alignment
+P26  THR184    THR184    both pockets           0.18      0.22           CE alignment
+P27  VAL186    VAL186    both pockets           0.33      0.33           CE alignment
+(SideChain = distance between side-chain centroids; large = same residue but side chain points elsewhere.)
+
+====================================================================================================
+TABLE 3. IDENTICAL / SIMILAR / DIFFERENT AT EACH POSITION
+====================================================================================================
+Similar = same group: AVILM FWY ST NQ DE KRH G P C.   Change is read as 5CF0 -> 3T0H
+Pos  5CF0      3T0H      Category       Change
+P1   LEU48     LEU48     IDENTICAL      -
+P2   ASN51     ASN51     IDENTICAL      -
+P3   SER52     SER52     IDENTICAL      -
+P4   ASP54     ASP54     IDENTICAL      -
+P5   ALA55     ALA55     IDENTICAL      -
+P6   LYS58     LYS58     IDENTICAL      -
+P7   ASP93     ASP93     IDENTICAL      -
+P8   GLY95     GLY95     IDENTICAL      -
+P9   ILE96     ILE96     IDENTICAL      -
+P10  GLY97     GLY97     IDENTICAL      -
+P11  MET98     MET98     IDENTICAL      -
+P12  ASP102    ASP102    IDENTICAL      -
+P13  LEU103    LEU103    IDENTICAL      -
+P14  ASN106    ASN106    IDENTICAL      -
+P15  LEU107    LEU107    IDENTICAL      -
+P16  GLY108    GLY108    IDENTICAL      -
+P17  THR109    THR109    IDENTICAL      -
+P18  ILE110    ILE110    IDENTICAL      -
+P19  GLY135    GLY135    IDENTICAL      -
+P20  PHE138    PHE138    IDENTICAL      -
+P21  TYR139    TYR139    IDENTICAL      -
+P22  VAL150    VAL150    IDENTICAL      -
+P23  THR152    THR152    IDENTICAL      -
+P24  HIS154    HIS154    IDENTICAL      -
+P25  TRP162    TRP162    IDENTICAL      -
+P26  THR184    THR184    IDENTICAL      -
+P27  VAL186    VAL186    IDENTICAL      -
+Totals: IDENTICAL 27, SIMILAR 0, DIFFERENT 0, NO EQUIVALENT 0
+
+====================================================================================================
+TABLE 4. PROPERTIES OF THE RESIDUES AT EACH POSITION (side chains only)
+====================================================================================================
+KD = Kyte-Doolittle (+ve hydrophobic). Ar = aromatic. Ion = ionisable. D/A = side-chain H-bond donors/acceptors.
+Pos  | 5CF0        KD Class        Ar  Ion        D  A  | 3T0H        KD Class        Ar  Ion        D  A 
+P1   | LEU48      3.8 hydrophobic  -   -          0  0  | LEU48      3.8 hydrophobic  -   -          0  0 
+P2   | ASN51     -3.5 polar        -   -          1  1  | ASN51     -3.5 polar        -   -          1  1 
+P3   | SER52     -0.8 polar        -   -          1  1  | SER52     -0.8 polar        -   -          1  1 
+P4   | ASP54     -3.5 acidic(-)    -   acid       0  2  | ASP54     -3.5 acidic(-)    -   acid       0  2 
+P5   | ALA55      1.8 hydrophobic  -   -          0  0  | ALA55      1.8 hydrophobic  -   -          0  0 
+P6   | LYS58     -3.9 basic(+)     -   base       1  0  | LYS58     -3.9 basic(+)     -   base       1  0 
+P7   | ASP93     -3.5 acidic(-)    -   acid       0  2  | ASP93     -3.5 acidic(-)    -   acid       0  2 
+P8   | GLY95     -0.4 Gly          -   -          0  0  | GLY95     -0.4 Gly          -   -          0  0 
+P9   | ILE96      4.5 hydrophobic  -   -          0  0  | ILE96      4.5 hydrophobic  -   -          0  0 
+P10  | GLY97     -0.4 Gly          -   -          0  0  | GLY97     -0.4 Gly          -   -          0  0 
+P11  | MET98      1.9 hydrophobic  -   -          0  0  | MET98      1.9 hydrophobic  -   -          0  0 
+P12  | ASP102    -3.5 acidic(-)    -   acid       0  2  | ASP102    -3.5 acidic(-)    -   acid       0  2 
+P13  | LEU103     3.8 hydrophobic  -   -          0  0  | LEU103     3.8 hydrophobic  -   -          0  0 
+P14  | ASN106    -3.5 polar        -   -          1  1  | ASN106    -3.5 polar        -   -          1  1 
+P15  | LEU107     3.8 hydrophobic  -   -          0  0  | LEU107     3.8 hydrophobic  -   -          0  0 
+P16  | GLY108    -0.4 Gly          -   -          0  0  | GLY108    -0.4 Gly          -   -          0  0 
+P17  | THR109    -0.7 polar        -   -          1  1  | THR109    -0.7 polar        -   -          1  1 
+P18  | ILE110     4.5 hydrophobic  -   -          0  0  | ILE110     4.5 hydrophobic  -   -          0  0 
+P19  | GLY135    -0.4 Gly          -   -          0  0  | GLY135    -0.4 Gly          -   -          0  0 
+P20  | PHE138     2.8 hydrophobic  Y   -          0  0  | PHE138     2.8 hydrophobic  Y   -          0  0 
+P21  | TYR139    -1.3 polar        Y   weak(Tyr)  1  1  | TYR139    -1.3 polar        Y   weak(Tyr)  1  1 
+P22  | VAL150     4.2 hydrophobic  -   -          0  0  | VAL150     4.2 hydrophobic  -   -          0  0 
+P23  | THR152    -0.7 polar        -   -          1  1  | THR152    -0.7 polar        -   -          1  1 
+P24  | HIS154    -3.2 His(+/0)     Y   His(pH)    1  1  | HIS154    -3.2 His(+/0)     Y   His(pH)    1  1 
+P25  | TRP162    -0.9 hydrophobic  Y   -          1  0  | TRP162    -0.9 hydrophobic  Y   -          1  0 
+P26  | THR184    -0.7 polar        -   -          1  1  | THR184    -0.7 polar        -   -          1  1 
+P27  | VAL186     4.2 hydrophobic  -   -          0  0  | VAL186     4.2 hydrophobic  -   -          0  0 
+Backbone: every residue except Pro also has a backbone N-H donor, and every residue a C=O acceptor (not counted above).
+
+====================================================================================================
+TABLE 5. POCKET TOTALS
+====================================================================================================
+property                        5CF0 positions    3T0H positions    5CF0 pocket only  3T0H pocket only  
+residues                        27                27                21                25                
+hydrophobic (A,V,I,L,M,F,W,C)   11                11                11                10                
+polar uncharged (S,T,N,Q,Y)     7                 7                 4                 7                 
+acidic (D,E)                    3                 3                 3                 2                 
+basic (K,R)                     1                 1                 1                 1                 
+His                             1                 1                 0                 1                 
+Gly                             4                 4                 2                 4                 
+Pro                             0                 0                 0                 0                 
+aromatic (F,W,Y,H)              4                 4                 3                 4                 
+net charge pH7 (His=0)          -2                -2                -2                -1                
+mean Kyte-Doolittle             0.15              0.15              0.61              0.12              
+side-chain H-bond donors        10                10                6                 10                
+side-chain H-bond acceptors     14                14                10                12                
+
+====================================================================================================
+TABLE 6. UNIVERSAL HUMAN POCKET (positions shared by the two human structures)
+====================================================================================================
+Key for merging with the 3K60 comparison: use the 3T0H residue number as the common label.
+Pos  5CF0      3T0H      Status                 Consensus feature                              Design note
+P1   LEU48     LEU48     CONSERVED-RIGID        L (hydrophobic)                                same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P2   ASN51     ASN51     CONSERVED-RIGID        N (polar), D1/A1                               same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P3   SER52     SER52     CONSERVED-RIGID        S (polar), D1/A1                               same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P4   ASP54     ASP54     CONSERVED-RIGID        D (acidic(-)), D0/A2                           same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P5   ALA55     ALA55     CONSERVED-RIGID        A (hydrophobic)                                same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P6   LYS58     LYS58     CONSERVED-MOBILE       K (basic(+)), D1/A0                            same residue but side chain moves: ligand must tolerate both conformations; check 3K60 for rigidity
+P7   ASP93     ASP93     CONSERVED-RIGID        D (acidic(-)), D0/A2                           same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P8   GLY95     GLY95     CONSERVED-RIGID        G (Gly)                                        same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P9   ILE96     ILE96     CONSERVED-RIGID        I (hydrophobic)                                same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P10  GLY97     GLY97     CONSERVED-RIGID        G (Gly)                                        same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P11  MET98     MET98     CONSERVED-RIGID        M (hydrophobic)                                same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P12  ASP102    ASP102    CONSERVED-RIGID        D (acidic(-)), D0/A2                           same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P13  LEU103    LEU103    CONSERVED-RIGID        L (hydrophobic)                                same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P14  ASN106    ASN106    CONSERVED-MOBILE       N (polar), D1/A1                               same residue but side chain moves: ligand must tolerate both conformations; check 3K60 for rigidity
+P15  LEU107    LEU107    CONSERVED-MOBILE       L (hydrophobic)                                same residue but side chain moves: ligand must tolerate both conformations; check 3K60 for rigidity
+P16  GLY108    GLY108    CONSERVED-MOBILE       G (Gly)                                        same residue but side chain moves: ligand must tolerate both conformations; check 3K60 for rigidity
+P17  THR109    THR109    CONSERVED-MOBILE       T (polar), D1/A1                               same residue but side chain moves: ligand must tolerate both conformations; check 3K60 for rigidity
+P18  ILE110    ILE110    CONSERVED-MOBILE       I (hydrophobic)                                same residue but side chain moves: ligand must tolerate both conformations; check 3K60 for rigidity
+P19  GLY135    GLY135    CONSERVED-RIGID        G (Gly)                                        same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P20  PHE138    PHE138    CONSERVED-RIGID        F (hydrophobic), aromatic                      same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P21  TYR139    TYR139    CONSERVED-RIGID        Y (polar), D1/A1, aromatic                     same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P22  VAL150    VAL150    CONSERVED-RIGID        V (hydrophobic)                                same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P23  THR152    THR152    CONSERVED-RIGID        T (polar), D1/A1                               same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P24  HIS154    HIS154    CONSERVED-RIGID        H (His(+/0)), D1/A1, aromatic                  same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P25  TRP162    TRP162    CONSERVED-RIGID        W (hydrophobic), D1/A0, aromatic               same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P26  THR184    THR184    CONSERVED-RIGID        T (polar), D1/A1                               same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+P27  VAL186    VAL186    CONSERVED-RIGID        V (hydrophobic)                                same residue, same place in both human pockets: use for potency; gives no selectivity vs 3K60 unless 3K60 differs here
+Status counts: CONSERVED-MOBILE 6, CONSERVED-RIGID 21
+
+Universal human core (conserved + rigid), 3T0H numbering:
+  LEU48 ASN51 SER52 ASP54 ALA55 ASP93 GLY95 ILE96 GLY97 MET98 ASP102 LEU103 GLY135 PHE138 TYR139 VAL150 THR152 HIS154 TRP162 THR184 VAL186
+Conserved but mobile:
+  LYS58 ASN106 LEU107 GLY108 THR109 ILE110
+Variable / unique between the two human structures:
+  none
